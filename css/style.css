@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-icons {
+    color: rgb(96, 96, 96);
+
+}
+
+.root__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+
+.root__header__left {
+    display: flex;
+    align-items: center;
+}
+
+.root__header__left img {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.root__header i {
+    padding: 0px 7px;
+    cursor: pointer;
+}
+.root__header__search form {
+    border: 1px solid #ddd;
+    height: 35px;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+.root__header__search input {
+    width: 500px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+}
+.root__header__search button {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.root__content {
+    height: calc(100vH-70px);
+    display: flex;
+    overflow: hidden;
+}
+.root__content__sidebar {
+    height: 100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+.root__content__sidebar__kategorija {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.root__content__sidebar__lista {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+.root__content__sidebar__lista span {
+    margin-left: 15px;
+}
+.root__content__sidebar__lista:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.root__content__sidebar::-webkit-scrollbar {
+    display: none;
+}
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+
+.root__content__videos {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+   
+}
+
+
+.root__content__videos__kategorije {
+    margin-left: 200px;
+    display: flex;
+}
+.root__content__videos__kategorije a {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 8px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 16px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, .1);
+    white-space: nowrap;
+}
+.root__content__videos__kategorije a:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+
+/* videos */
+
+.root__content__videos__container  {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.root__content__videos__container__video {
+width: 310px;
+margin-right: 10px;
+margin-bottom: 30px;
+
+}
+
+.root__content__videos__container__video__hehe {
+    width: 100%;
+    height: 170px;
+
+
+}
+.root__content__videos__container__video__hehe img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.root__content__videos__container__video__hehe__opis {
+display: flex;
+margin-top: 10px;
+}
+
+.root__content__videos__container__video__hehe__opis__autor img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+
+
+}
+
+.root__content__videos__container__video__hehe__opis__naslov {
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+
+
+}
+.root__content__videos__container__video__hehe__opis__naslov h3 {
+    color: rgb(3,3,3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.root__content__videos__container__video__hehe__opis__naslov a, span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+@media (max-width: 934px) {
+    .root__header__search {
+        display: none;
+    }
+    .root__content__sidebar {
+        display: none;
+
+    }
+   
+    .root__header__icons .material-icons {
+        display: none;
+    }
+    .root__header__icons .display-this {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 1772px) {
+    .root__content__videos__kategorije {
+        display: none;
+
+    }
+}
